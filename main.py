@@ -5,7 +5,7 @@ import os
 
 def userConfirm():
 	if os.path.isfile("Dictionary.json"):
-		user_input = input("It seems that the dictionary already exists. Do you want to continue? (y/n): ")
+		user_input = input("It seems that the dictionary already exists. Would you like to re-train? (y/N): ")
 		return user_input.lower() == "y"
 	return True
 
