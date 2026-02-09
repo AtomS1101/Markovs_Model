@@ -42,6 +42,6 @@ class Predict:
 			while flag:
 				self.selectWord()
 				self._sentence.append(self._word)
-				if self._word[-1] == Settings.sign[Settings.language]["comma"]:
+				if self._word[-1] == Settings.sign["comma"]:
 					flag = False
-		return Settings.sign[Settings.language]["space"].join(self._sentence)
+		return Settings.sign["space"].join(self._sentence)

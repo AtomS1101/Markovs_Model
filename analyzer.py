@@ -14,7 +14,7 @@ class Analyzer:
 		with open("Dictionary.json", "w", encoding="utf-8") as f, \
 			  open("PartsList.json", "w", encoding="utf-8") as g:
 			json.dump(self._dictionary, f, ensure_ascii=False)
-			json.dump(self._parts_list, g, ensure_ascii=False, indent=2)
+			json.dump(self._parts_list, g, ensure_ascii=False)
 
 	def addToPartsList(self):
 		if self._parts not in self._parts_list:
